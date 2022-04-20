@@ -207,9 +207,27 @@ section.productos{
     padding: 1px;
 }
 /* Media Queries */
-@media (max-width: 768px){
-    section.productos{
-        grid-column: 1/span 3;
-        grid-row: 1/span 3;
-    }
+@media all and (max-width: 768px){
+    section.productos, section.Categorias{
+        display: grid;
+        display: flex;
+        columns: 25% 25% ;
+        grid-template-columns: 25% 25% ;
+        grid-template-rows: auto auto ;
+        flex-direction: column column;
+        padding: auto;
+        justify-content: center;
+        align-items: center;
+}
+@media all and (max-width: 600px){
+    section.productos, section.Categorias{
+        display: grid;
+        display: flex;
+        columns: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        flex-direction: column ;
+        padding: auto;
+        justify-content: center;
+        align-items: center;
 }
