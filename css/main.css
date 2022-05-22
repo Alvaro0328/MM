@@ -7,6 +7,13 @@
 body {
   text-align: center; }
 
+.footer1 {
+  position: absolute;
+  width: 100%;
+  bottom: 0px;
+}
+
+
 ul.footer {
   text-align: left;
   background-color: #c2c500;
@@ -15,8 +22,7 @@ ul.footer {
 a {
   color: #ff9900;
   font-weight: bold;
-  text-decoration: none;
-  text-shadow: 1px 1px 2px black, 0 0 2em black, 0 0 0.2em black; }
+  text-decoration: none; }
 
 /* header */
 header {
@@ -111,12 +117,7 @@ nav.superior {
   padding: 10px 0 0 0;
   list-style: none;
   background: #c2c500;
-  background: -moz-linear-gradient(#ff9100, #c2c500);
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(0, #c2c500), color-stop(1, white));
   background: -webkit-linear-gradient(#ff9100, #c2c500);
-  background: -o-linear-gradient(#ff9100, #c2c500);
-  background: -ms-linear-gradient(#ff9100, #c2c500);
-  background: linear-gradient(#ff9100, #c2c500);
   -moz-border-radius: 0px;
   border-radius: 10px;
   -moz-box-shadow: 0 2px 1px #ffffff;
@@ -257,12 +258,13 @@ h6 {
 
   .containerproducto {
     margin: 15px;
-    background-color: #c2c500;
+    background-color: hsla(61, 100%, 39%, 0.5);
     display: grid;
     grid-template-rows: 0 100%;
     grid-template-columns: 25% 75%;
     font-family: sans-serif;
     font-size: 30px;
+
   }
   .fotoproducto {
     border-radius: 10%;
@@ -273,8 +275,11 @@ h6 {
     grid-column-end: 1;
   }
   .propiedades {
-    margin-top: 26px;
-    background-color: #ff9100;
+    margin-bottom: 12px;
+    margin-right: 10px;
+    border-radius: 6%;
+    margin-top: 30px;
+    background-color: hsla(34, 100%, 50%, 0.5);
     grid-row-start: 1;
     grid-row-end: 3;
     grid-column-start: 2;
